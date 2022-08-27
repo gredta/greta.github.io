@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Pet Polls</title>
+<link rel="stylesheet" type="text/css" href="../../styles.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+<script>
+$(document).ready(function(){
+    $("form").on("submit", function(event){
+        event.preventDefault();
+ 
+        var formValues= $(this).serialize();
+        var actionUrl = $(this).attr("action");
+ 
+        $.post(actionUrl, formValues, function(data){
+            // Display the returned data in browser
+            $("#result").html(data);
+        });
+    });
+});
+</script>
+</head>
+<body background="../../pawprint.png">
+
+<div class="navbar">
+ <a class="active" href="../../index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Animals 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../../animals/cat/cat.html">Cat</a>
+      <a href="../../animals/dog/dog.html">Dog</a>
+      <a href="../../animals/rabbit/rabbit.html">Rabbit</a>
+      <a href="../../animals/hamster/hamster.html">Hamster</a>
+      <a href="../../animals/hedgehog/hedgehog.html">Hedgehog</a>
+      <a href="../../animals/snake/snake.html">Snake</a>
+      <a href="../../animals/hermitcrab/hermitcrab.html">Hermit Crab</a>
+      <a href="../../animals/goldfish/goldfish.html">Goldfish</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Pet Data 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+       <a href="../data/datainsert.html">Insert Data</a>
+      <a href="../data/database3.html">Visualize Data</a>
+    </div>
+  </div>
+    <a href="../resources.html">Resources</a>
+    <a href="../about.html">About</a>
+    <a href="../petquiz.html">Pet Quiz</a>
+    <a href="polls.html">Pet Polls</a>
+    <a href="../form.html">Contact Me</a>
+</div>
+
+<body>
+      <h1><a href="../../index.html">Animal Care Guide</a></h1>
+      <h2>Pet Poll</h2>
+<div class="form">
+    <div id="result"></div>
+<div id="poll">
+<h2>Do you have any pets at home?</h2>
+<form>Yes:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>No:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</div>
+</div>
+</body>
+</html>
