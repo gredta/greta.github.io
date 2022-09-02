@@ -491,7 +491,7 @@ textarea{
     }
 
     #projects{
-        height: 120vh;
+        height: 140vh;
         flex-wrap: wrap-reverse;
     }
     .projects-item.section-info{
