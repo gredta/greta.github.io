@@ -443,7 +443,7 @@ textarea{
     }
 
     #experience{
-        height: 180vh;
+        height: 190vh;
         flex-wrap: wrap;
     }
     .experience-item.section-info{
@@ -455,7 +455,7 @@ textarea{
     }
 
     #education{
-        height: 150vh;
+        height: 160vh;
         flex-wrap: wrap;
     }
     .education-item.section-info{
@@ -468,7 +468,7 @@ textarea{
     }
 
     #orgs{
-        height: 150vh;
+        height: 160vh;
         flex-wrap: wrap;
     }
     .orgs-item.section-info{
@@ -480,7 +480,7 @@ textarea{
     }
 
     #skills{
-        height: 140vh;
+        height: 170vh;
     }
     .skills{
         flex-wrap: wrap;
@@ -491,7 +491,7 @@ textarea{
     }
 
     #projects{
-        height: 100vh;
+        height: 140vh;
         flex-wrap: wrap-reverse;
     }
     .projects-item.section-info{
