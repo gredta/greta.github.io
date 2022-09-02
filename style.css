@@ -62,7 +62,9 @@ li{
 .section{
     min-height: 400px;
     width:100%;
-    overflow: hidden;
+    max-height: 4500px;
+    padding-bottom: 0px;
+    overflow: scroll;
 }
 .section-image{
     height: 80%;
@@ -104,7 +106,7 @@ li{
 
 #about{
     display: flex;
-    height: 100vh;
+    max-height: 1000px;
     flex-wrap: wrap-reverse;
 }
 .about-item{
@@ -112,7 +114,7 @@ li{
 }
 
 .about-item.section-image{
-    height: 100%;
+    height: 120vh;
     background-image: url('walk.png');
     min-width: 400px;
 }
@@ -209,7 +211,6 @@ li{
 -moz-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
 box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
 padding-top: 30px;
-padding-bottom: 30px;
 }
 .skills{
     display: flex;
@@ -388,9 +389,41 @@ textarea{
         width: 90%;
     }
     .section{
-        min-height: 400px;
-        width:100%;
+        padding-bottom: 0px;
+    }
+
+    #home{
         overflow: hidden;
+    }
+    #about{
+        height: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    #experience{
+        height: 300vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    .education{
+        height: 400vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    .orgs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
     }
 }
 @media (max-width: 1200px){
@@ -422,6 +455,7 @@ textarea{
         margin-right: auto;
         text-align: center;
         height: 600px;
+        overflow: scroll;
     }
 
     .header-img{
@@ -430,6 +464,7 @@ textarea{
         height: 400px;
         background-position:center center;
     }
+    
 
     #name{
         flex: 0 1 100%;
@@ -441,19 +476,18 @@ textarea{
     }
 
     #about{
-        height: 80vh;
+        height: 90vh;
     }
     .about-item{
         flex: 0 1 100%;
     }
     .section-image{
-
         background-position: center center;
         max-height: 500px;
     }
 
     #experience{
-        height: 190vh;
+        height: 200vh;
         flex-wrap: wrap;
     }
     .experience-item.section-info{
@@ -465,7 +499,7 @@ textarea{
     }
 
     #education{
-        height: 160vh;
+        height: 155vh;
         flex-wrap: wrap;
     }
     .education-item.section-info{
@@ -478,7 +512,7 @@ textarea{
     }
 
     #orgs{
-        height: 160vh;
+        height: 155vh;
         flex-wrap: wrap;
     }
     .orgs-item.section-info{
