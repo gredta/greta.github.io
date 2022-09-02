@@ -250,6 +250,7 @@ padding-top: 30px;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 .projects-item.section-info{
     flex: 0 1 60%;
@@ -487,7 +488,7 @@ textarea{
     }
 
     #experience{
-        height: 215vh;
+        height: 220vh;
         flex-wrap: wrap;
     }
     .experience-item.section-info{
@@ -499,7 +500,7 @@ textarea{
     }
 
     #education{
-        height: 170vh;
+        height: 175vh;
         flex-wrap: wrap;
     }
     .education-item.section-info{
@@ -512,7 +513,7 @@ textarea{
     }
 
     #orgs{
-        height: 160vh;
+        height: 165vh;
         flex-wrap: wrap;
     }
     .orgs-item.section-info{
