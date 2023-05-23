@@ -62,7 +62,9 @@ li{
 .section{
     min-height: 400px;
     width:100%;
-    overflow: hidden;
+    max-height: 4500px;
+    padding-bottom: 0px;
+    overflow: scroll;
 }
 .section-image{
     height: 80%;
@@ -104,7 +106,7 @@ li{
 
 #about{
     display: flex;
-    height: 100vh;
+    height: auto;
     flex-wrap: wrap-reverse;
 }
 .about-item{
@@ -112,15 +114,14 @@ li{
 }
 
 .about-item.section-image{
-    height: 100%;
+    height: 100vh;
     background-image: url('walk.png');
     min-width: 400px;
 }
 
 #experience{
     display: flex;
-    height: 130vh;
-    justify-content: right;
+    height: auto;
 }
 .experience-item.section-info{
     flex: 0 1 60%;
@@ -128,12 +129,13 @@ li{
 .experience-item.section-image{
     background-image: url('work.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 
 #education{
     display: flex;
-    height: 110vh;
+    height: auto;
     flex-wrap: wrap-reverse;
 }
 .education-item.section-info{
@@ -142,12 +144,14 @@ li{
 .education-item.section-image{
     background-image: url('school.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 
 #orgs{
     display: flex;
-    height: 120vh;
+    height: auto;
+    padding-bottom: 20px;
 }
 .orgs-item.section-info{
     flex: 0 1 60%;
@@ -155,6 +159,7 @@ li{
 .orgs-item.section-image{
     background-image: url('orgs.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 .work-div{
@@ -209,7 +214,6 @@ li{
 -moz-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
 box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
 padding-top: 30px;
-padding-bottom: 30px;
 }
 .skills{
     display: flex;
@@ -246,19 +250,22 @@ padding-bottom: 30px;
 
 #projects{
     display: flex;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    margin-bottom: 20px;
 }
 .projects-item.section-info{
     flex: 0 1 60%;
     position: relative;
 }
 .projects-item.section-image{
-    background-image: url('point.PNG');
+    background-image: url('point.png');
     flex: 0 1 40%;
     align-self: center;
-    height: 500px;
+    height: 100vh;
+    margin-top: auto;
 }
 
 .projects-div{
@@ -363,7 +370,7 @@ textarea{
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 20px;*/
+    padding-right: 20px;
     font-weight: 300;
     transition: .3s;
 }
@@ -383,6 +390,49 @@ textarea{
 .icon-box img{
     height: 50px;
 }
+
+@media screen and (max-width: 540px) {
+    .body-wrapper{
+        width: 90%;
+    }
+    .section{
+        padding-bottom: 0px;
+    }
+
+    #home{
+        overflow: hidden;
+    }
+    #about{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    #experience{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    .education{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+    .orgs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow: scroll;
+    }
+}
 @media (max-width: 1200px){
         .section-image{
           display: none;
@@ -390,7 +440,16 @@ textarea{
  }
 @media (min-width: 1200px){
         .section-image{
-          display: block;
+          display: flex;
+          height: 100vh;
+          margin-top: auto;
+        }
+        .projects-item.section-image{
+            background-size: contain;
+            display: flex;
+            height: 500px;
+            justify-content: center;
+            margin: auto;
         }
  }
 @media only screen and (max-width: 1200px) {
@@ -412,6 +471,7 @@ textarea{
         margin-right: auto;
         text-align: center;
         height: 600px;
+        overflow: scroll;
     }
 
     .header-img{
@@ -420,6 +480,7 @@ textarea{
         height: 400px;
         background-position:center center;
     }
+
 
     #name{
         flex: 0 1 100%;
@@ -431,19 +492,18 @@ textarea{
     }
 
     #about{
-        height: 80vh;
+        height: auto;
     }
     .about-item{
         flex: 0 1 100%;
     }
     .section-image{
-
         background-position: center center;
         max-height: 500px;
     }
 
     #experience{
-        height: 190vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .experience-item.section-info{
@@ -455,7 +515,7 @@ textarea{
     }
 
     #education{
-        height: 160vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .education-item.section-info{
@@ -468,7 +528,7 @@ textarea{
     }
 
     #orgs{
-        height: 160vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .orgs-item.section-info{
@@ -480,7 +540,8 @@ textarea{
     }
 
     #skills{
-        height: 170vh;
+        max-height: 50px;
+        margin-top: 15px;
     }
     .skills{
         flex-wrap: wrap;
@@ -491,8 +552,9 @@ textarea{
     }
 
     #projects{
-        height: 140vh;
+        height: auto;
         flex-wrap: wrap-reverse;
+        overflow-x: hidden;
     }
     .projects-item.section-info{
         flex: 0 1 100%;
@@ -507,7 +569,8 @@ textarea{
         width: 135px;
     }
     #contact{
-        height: 600px;
+        height: auto;
+        margin-top: 20px;
     }
     .contact{
         flex-wrap: wrap;
