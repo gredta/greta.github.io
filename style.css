@@ -64,13 +64,17 @@ li{
     width:100%;
     max-height: 4500px;
     padding-bottom: 0px;
-    overflow: scroll;
+    overflow: hidden;
+    margin-left: auto;
 }
 .section-image{
     height: 80%;
     max-height: 700px;
     background-size: contain ;
     background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
 }
 
 .navbar{
@@ -87,13 +91,13 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 7%;
+    /*background-color: pink;*/
 }
 
 .header-img{
     height: 80%;
     background-image: url('header.png');
-    flex: 0 1 60%;
+    flex: 0 1 40%;
     background-size: contain;
     background-repeat: no-repeat;
     max-height: 800px;
@@ -117,6 +121,9 @@ li{
     height: 100vh;
     background-image: url('walk.png');
     min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
 }
 
 #experience{
@@ -131,6 +138,7 @@ li{
     flex: 0 1 40%;
     height: 100vh;
     align-self: center;
+    background-position: center;
 }
 
 #education{
@@ -146,6 +154,7 @@ li{
     flex: 0 1 40%;
     height: 100vh;
     align-self: center;
+    background-position: center;
 }
 
 #orgs{
@@ -263,7 +272,6 @@ padding-top: 30px;
 .projects-item.section-image{
     background-image: url('point.png');
     flex: 0 1 40%;
-    align-self: center;
     height: 100vh;
     margin-top: auto;
 }
@@ -408,7 +416,7 @@ textarea{
         flex-wrap: wrap;
         flex-direction: column;
         overflow-x: hidden;
-        overflow: scroll;
+        overflow: hidden;
     }
     #experience{
         height: auto;
@@ -431,6 +439,16 @@ textarea{
         flex-direction: column;
         overflow-x: hidden;
         overflow: scroll;
+    }
+    .link-box {
+        height: 100%;
+        background-color: #DB6868;
+        width: 10px;
+        transition: 0.3s;
+        overflow: hidden;
+        color: white;
+        text-align: right;
+        position: relative;
     }
 }
 @media (max-width: 1200px){
