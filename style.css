@@ -106,7 +106,7 @@ li{
 
 #about{
     display: flex;
-    max-height: 1000px;
+    height: auto;
     flex-wrap: wrap-reverse;
 }
 .about-item{
@@ -114,15 +114,14 @@ li{
 }
 
 .about-item.section-image{
-    height: 120vh;
+    height: 100vh;
     background-image: url('walk.png');
     min-width: 400px;
 }
 
 #experience{
     display: flex;
-    height: 130vh;
-    justify-content: right;
+    height: auto;
 }
 .experience-item.section-info{
     flex: 0 1 60%;
@@ -130,12 +129,13 @@ li{
 .experience-item.section-image{
     background-image: url('work.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 
 #education{
     display: flex;
-    height: 110vh;
+    height: auto;
     flex-wrap: wrap-reverse;
 }
 .education-item.section-info{
@@ -144,12 +144,14 @@ li{
 .education-item.section-image{
     background-image: url('school.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 
 #orgs{
     display: flex;
-    height: 120vh;
+    height: auto;
+    padding-bottom: 20px;
 }
 .orgs-item.section-info{
     flex: 0 1 60%;
@@ -157,6 +159,7 @@ li{
 .orgs-item.section-image{
     background-image: url('orgs.png');
     flex: 0 1 40%;
+    height: 100vh;
     align-self: center;
 }
 .work-div{
@@ -247,10 +250,11 @@ padding-top: 30px;
 
 #projects{
     display: flex;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    margin-bottom: 20px;
 }
 .projects-item.section-info{
     flex: 0 1 60%;
@@ -260,7 +264,8 @@ padding-top: 30px;
     background-image: url('point.png');
     flex: 0 1 40%;
     align-self: center;
-    height: 500px;
+    height: 100vh;
+    margin-top: auto;
 }
 
 .projects-div{
@@ -365,7 +370,7 @@ textarea{
     padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 20px;*/
+    padding-right: 20px;
     font-weight: 300;
     transition: .3s;
 }
@@ -385,6 +390,7 @@ textarea{
 .icon-box img{
     height: 50px;
 }
+
 @media screen and (max-width: 540px) {
     .body-wrapper{
         width: 90%;
@@ -397,7 +403,7 @@ textarea{
         overflow: hidden;
     }
     #about{
-        height: 800px;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -405,7 +411,7 @@ textarea{
         overflow: scroll;
     }
     #experience{
-        height: 300vh;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -413,7 +419,7 @@ textarea{
         overflow: scroll;
     }
     .education{
-        height: 400vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
@@ -434,7 +440,16 @@ textarea{
  }
 @media (min-width: 1200px){
         .section-image{
-          display: block;
+          display: flex;
+          height: 100vh;
+          margin-top: auto;
+        }
+        .projects-item.section-image{
+            background-size: contain;
+            display: flex;
+            height: 500px;
+            justify-content: center;
+            margin: auto;
         }
  }
 @media only screen and (max-width: 1200px) {
@@ -477,7 +492,7 @@ textarea{
     }
 
     #about{
-        height: 95vh;
+        height: auto;
     }
     .about-item{
         flex: 0 1 100%;
@@ -488,7 +503,7 @@ textarea{
     }
 
     #experience{
-        height: 220vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .experience-item.section-info{
@@ -500,7 +515,7 @@ textarea{
     }
 
     #education{
-        height: 175vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .education-item.section-info{
@@ -513,7 +528,7 @@ textarea{
     }
 
     #orgs{
-        height: 165vh;
+        height: auto;
         flex-wrap: wrap;
     }
     .orgs-item.section-info{
@@ -525,8 +540,8 @@ textarea{
     }
 
     #skills{
-        height: 170vh;
-        overflow-x: hidden;
+        max-height: 50px;
+        margin-top: 15px;
     }
     .skills{
         flex-wrap: wrap;
@@ -537,7 +552,7 @@ textarea{
     }
 
     #projects{
-        height: 140vh;
+        height: auto;
         flex-wrap: wrap-reverse;
         overflow-x: hidden;
     }
@@ -554,7 +569,8 @@ textarea{
         width: 135px;
     }
     #contact{
-        height: 600px;
+        height: auto;
+        margin-top: 20px;
     }
     .contact{
         flex-wrap: wrap;
