@@ -91,21 +91,22 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: pink;*/
 }
 
 .header-img{
     height: 80%;
     background-image: url('header.png');
-    flex: 0 1 40%;
+    flex: 0 1 30%;
     background-size: contain;
     background-repeat: no-repeat;
     max-height: 800px;
+    background-position: center;
 }
 
 #name{
-    flex: 0 1 30%;
+    flex: right;
     height: auto;
+    margin-right: 100px;
 }
 
 #about{
@@ -124,6 +125,7 @@ li{
     margin-right: auto;
     margin-left: auto;
     background-position: center;
+    margin-top: 0;
 }
 
 #experience{
@@ -139,12 +141,14 @@ li{
     height: 100vh;
     align-self: center;
     background-position: center;
+    margin-top: 0;
 }
 
 #education{
     display: flex;
     height: auto;
     flex-wrap: wrap-reverse;
+    align-items: center;
 }
 .education-item.section-info{
     flex: 0 1 60%;
@@ -153,6 +157,7 @@ li{
     background-image: url('school.png');
     flex: 0 1 40%;
     height: 100vh;
+    margin-top: 0;
     align-self: center;
     background-position: center;
 }
@@ -169,6 +174,8 @@ li{
     background-image: url('orgs.png');
     flex: 0 1 40%;
     height: 100vh;
+    background-position: center;
+    margin-top: 0;
     align-self: center;
 }
 .work-div{
@@ -274,6 +281,7 @@ padding-top: 30px;
     flex: 0 1 40%;
     height: 100vh;
     margin-top: auto;
+    background-position: center;
 }
 
 .projects-div{
@@ -455,20 +463,23 @@ textarea{
         .section-image{
           display: none;
         }
+        #name{
+            margin-right: 0px;
+        }
  }
 @media (min-width: 1200px){
-        .section-image{
-          display: flex;
-          height: 100vh;
-          margin-top: auto;
-        }
-        .projects-item.section-image{
-            background-size: contain;
+    .section-image {
             display: flex;
-            height: 500px;
-            justify-content: center;
-            margin: auto;
+            height: 100vh;
+            margin-top: auto;
         }
+    .projects-item.section-image {
+        background-size: contain;
+        display: flex;
+        height: 500px;
+        justify-content: center;
+        margin: auto;
+    }
  }
 @media only screen and (max-width: 1200px) {
     #skills{
