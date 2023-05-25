@@ -30,7 +30,7 @@ $(document).ready(function(){
         if($this.hasClass("more1")){
         $( ".content-1" ).slideToggle('500','linear' );
                 $this.toggleClass("open-1");
-                if ($this.hasClass("open-1")) {
+                if ($this.hasClass("open-1") {
                     $this.html("Hide");
                 } else {
                     $this.html("Show more");
