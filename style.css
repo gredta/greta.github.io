@@ -232,6 +232,10 @@ display:none;
     width: 100%;
  }
 
+ button-1.more1:hover{
+    font-weight: 500;
+ }
+
  button-1.more1.open-1:hover{
     font-weight: 500;
  }
