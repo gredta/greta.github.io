@@ -12,15 +12,15 @@ $(document).ready(function(){
       } 
     });
 
-    $("button").click(function() {
+    $("button-2").click(function() {
         var $this = $(this);
-        if($this.hasClass("more")){
-        $( ".content" ).slideToggle('500','linear' );
+        if($this.hasClass("more2")){
+        $( ".content-2" ).slideToggle('500','linear' );
                 $this.toggleClass("open");
                 if ($this.hasClass("open")) {
                     $this.html("Hide");
                 } else {
-                    $this.html("Show previous");
+                    $this.html("Show more");
                 }
             }
     });
