@@ -166,6 +166,9 @@ body {
 display:none;
 }
 
+.content-1{
+    display:none;
+
   
   #orgs{
       display: flex;
