@@ -3,7 +3,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', 'Open Sans', 'Verdana';
     background-color: #f9f9f7;
     font-weight: 100;
   }
@@ -161,6 +161,11 @@ body {
       align-self: center;
       background-position: center;
   }
+
+.content {
+display:none;
+}
+
   
   #orgs{
       display: flex;
@@ -193,6 +198,40 @@ body {
       font-weight: 400;
       color: #DB6868;
   }
+
+ button.more{
+    all: unset;
+    opacity: .80;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 200;
+    width: 100%;
+    color: #DB6868;
+ }
+
+ button.more:hover{
+    font-weight: 500;
+ }
+
+ button-1.more1{
+    display: block;
+    width: 100;
+    opacity: .80;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight: 200;
+    color: #DB6868;
+    margin-bottom: 20px;
+ }
+
+ .orgs-div button-1{
+    width: 100%;
+ }
+
+ button-1.more1.open-1:hover{
+    font-weight: 500;
+ }
+
   .edu-div{
       border-left: 1px #f5b6da solid;
       padding-left: 10px;
@@ -225,15 +264,26 @@ body {
   }
   #skills{
       background-color: #C46E6E;
-      color: white;
-  -webkit-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
-  padding-top: 30px;
+      color: #f9f9f7;
+    -webkit-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
+    padding-bottom: 30px;
   }
+
+  .section-skills h2{
+    margin-left: auto;
+    margin-right: auto;
+    color: #f9f9f7;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    line-height: 1.2;
+  }
+
   .skills{
       display: flex;
-      height: 450px;
+      height: auto;
       justify-content: center;
   }
   
@@ -346,6 +396,7 @@ body {
       box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
       padding-top: 30px;
       padding-bottom: 30px;
+      margin-bottom: 0px;
   }
   
   .contact{
@@ -362,22 +413,39 @@ body {
   
   .formhead{
       opacity: 1;
+      margin-bottom: 5px;
+      text-align: left;
+  }
+
+  .form{
+    margin-top: 10px;
+    width: fit-content;
+  }
+
+
+  #contact h2{
+    margin-left: 10%;
+    text-align: left;
+    color: white;
   }
   
   input, textarea{
-      border: none;
+      border: 1px solid #262626;
+      border-radius: 10px;
       width: 250px;
       padding: 10px;
       font-size: 15px;
   }
   textarea{
       height: 150px;
+      background-color: #f9f9f7;
+      font-family: 'Helvetica Neue', 'Open Sans';
   }
   
   .send{
       display: flex;
       /*margin-left: 90px;*/
-      margin-top: 15px;
+      margin-top: 10px;
       border: none;
       color: #E6E6E6;
       background-color: #262626;
@@ -389,12 +457,17 @@ body {
       padding-right: 20px;
       font-weight: 300;
       transition: .3s;
+      width: 20px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
   }
   
   .send:hover{
       background-color: #f9f9f7;
       color: #C46E6E;
   }
+
   
   .icon-box{
       margin-top: 15px;
@@ -406,6 +479,29 @@ body {
   .icon-box img{
       height: 50px;
   }
+
+  footer{
+    width:100%;
+    margin: 0 auto;
+    height:auto;
+    text-align: center;
+    color: #E6E6E6;
+    background-color: #1f1f1f;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  .footer p{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff0f0;
+    line-height: 2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+
+
   
   @media screen and (max-width: 540px) {
       .body-wrapper{
@@ -459,6 +555,13 @@ body {
           position: relative;
       }
   }
+
+  #more {
+    display: none;
+    transition: width 1s ease-in, height 1s ease-in;
+}
+
+
   @media (max-width: 1200px){
           .section-image{
             display: none;
@@ -483,7 +586,7 @@ body {
    }
   @media only screen and (max-width: 1200px) {
       #skills{
-          height: 600px;
+          height: auto;
       }
   }
   
@@ -555,6 +658,7 @@ body {
           flex: 0 1 100%;
           align-self: center;
       }
+      
   
       #orgs{
           height: auto;
@@ -569,8 +673,9 @@ body {
       }
   
       #skills{
-          max-height: 50px;
+          height: auto;
           margin-top: 15px;
+          margin-bottom: 15px;
       }
       .skills{
           flex-wrap: wrap;
@@ -608,6 +713,20 @@ body {
           flex: 0 1 100%;
           text-align: center;
       }
+
+      #contact h2{
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+      }
+
+      .form{
+        margin-top: 10px;
+        width: min-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       .send{
       margin-left: auto;
       margin-right: auto;
