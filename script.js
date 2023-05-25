@@ -31,9 +31,9 @@ $(document).ready(function(){
         $( ".content-1" ).slideToggle('500','linear' );
                 $this.toggleClass("open-1");
                 if ($this.hasClass("open-1")) {
-                    $this.html("Show more");
+                    $this.html("Hide");
                 } else {
-                    $this.html("Show less");
+                    $this.html("Show more");
                 }
             }
     });
