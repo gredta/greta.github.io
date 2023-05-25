@@ -132,6 +132,7 @@ body {
       display: flex;
       height: auto;
   }
+
   .experience-item.section-info{
       flex: 0 1 60%;
   }
@@ -143,7 +144,6 @@ body {
       background-position: center;
       margin-top: 0;
   }
-  
   #education{
       display: flex;
       height: auto;
@@ -162,15 +162,20 @@ body {
       background-position: center;
   }
 
-.content {
-display:none;
+.content-2 {
+    display:none;
+    margin-top: 0;
+    height: min-content;
+}
+
+ul{
+    margin-top: auto;
 }
 
 .content-1 {
     display:none;
-    }
+}
 
-  
   #orgs{
       display: flex;
       height: auto;
@@ -179,6 +184,11 @@ display:none;
   .orgs-item.section-info{
       flex: 0 1 60%;
   }
+
+  #orgs p{
+    margin-top: auto;
+  }
+
   .orgs-item.section-image{
       background-image: url('orgs.png');
       flex: 0 1 40%;
@@ -194,6 +204,13 @@ display:none;
       margin-bottom: 5px;
       transition: 0.3s;
   }
+
+  .work-div p{
+    margin-top: auto;
+}
+
+
+
   .work-div:hover{
       border-left: 10px #DB6868 solid;
   }
@@ -203,26 +220,28 @@ display:none;
       color: #DB6868;
   }
 
- button.more{
+ button-2.more2{
     all: unset;
+    display: block;
+    width: 100%;
     opacity: .80;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: auto;
+    margin-bottom: 0px;
     font-weight: 200;
-    width: 100%;
     color: #DB6868;
  }
 
- button.more:hover{
+ button-2.more2:hover{
     font-weight: 500;
  }
 
  button-1.more1{
     display: block;
-    width: 100;
+    width: 100%;
     opacity: .80;
     font-size: 20px;
-    margin-top: 0px;
+    margin-top: auto;
     font-weight: 200;
     color: #DB6868;
     margin-bottom: 20px;
@@ -388,6 +407,7 @@ display:none;
   .link-box ul{
       position: absolute; bottom: 0;
       right: 0;
+      margin-top: auto;
   }
   .links{
       color: white !important;
@@ -564,10 +584,6 @@ display:none;
       }
   }
 
-  #more {
-    display: none;
-    transition: width 1s ease-in, height 1s ease-in;
-}
 
 
   @media (max-width: 1200px){
