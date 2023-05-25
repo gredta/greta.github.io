@@ -1,5 +1,5 @@
 # Personal Portfolio Website 🪴
-This is a personal portfolio website made with HTML, CSS, and JavaScript. 
+This is a personal portfolio website made with HTML, CSS, and JavaScript, and jQuery. 
 I share some information about myself, my hobbies, and a few of my achievements. 
 <p>
 This site is being hosted through GitHub Pages, (my favorite!) and it was super fun to build.
