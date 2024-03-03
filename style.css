@@ -3,13 +3,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica', 'Open Sans';
+    font-family: 'Helvetica Neue', sans-serif;
     background-color: #f9f9f7;
-    font-weight: 100;
+    font-weight: 300;
+    font-style: normal;
   }
   a{ 
       color: #DB6868;
       text-decoration: none;
+      font-weight: 300;
   }
   a:hover{
       color: #AA4E4E;
@@ -31,12 +33,13 @@ body {
        line-height: .85;
        color: #DB6868;
        opacity: .9;
+       font-weight: 300;
   }
   h3{
       opacity: .80;
       font-size: 30px;
       margin-top: 0px;
-      font-weight: 200;
+      font-weight: 300;
   }
   h4{
       margin-top:2px;
@@ -48,6 +51,7 @@ body {
        line-height: 1.6;
        opacity: .85;
        font-size: 18px;
+       font-weight: 300;
   }
   li{
       line-height: 1.6;
@@ -228,7 +232,7 @@ ul{
     font-size: 20px;
     margin-top: auto;
     margin-bottom: 0px;
-    font-weight: 200;
+    font-weight: 300;
     color: #DB6868;
  }
 
@@ -242,7 +246,7 @@ ul{
     opacity: .80;
     font-size: 20px;
     margin-top: auto;
-    font-weight: 200;
+    font-weight: 300;
     color: #DB6868;
     margin-bottom: 20px;
  }
@@ -467,7 +471,7 @@ ul{
   textarea{
       height: 150px;
       background-color: #f9f9f7;
-      font-family: 'Helvetica Neue', 'Open Sans';
+      font-family: 'Helvetica Neue', 'Open Sans Light';
   }
   
   .send{
@@ -759,3 +763,6 @@ ul{
               margin-top: 50px;
       }
   }
+
+  * {-webkit-font-smoothing: antialiased;}
+
