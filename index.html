@@ -12,6 +12,8 @@
 	<link href="style.css" rel="stylesheet">
 	<link rel="icon" href="favicon.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
@@ -215,13 +217,14 @@
 					<h4> LANGUAGES / FRAMEWORKS</h4>
 					<p> <span class="highlighted"> HTML, CSS/SASS </span> AngularJS, Vue.js, React.js, Node.js,<span
 							class="highlighted"> JavaScript, </span> Python, C++, MySQL, PHP, XML, <span
-							class="highlighted"> jQuery,</span> Java, JavaFX, TypeScript, Bootstrap</p>
+							class="highlighted"> jQuery,</span> Java, JavaFX, TypeScript, <span
+							class="highlighted"> Tailwind CSS, </span>Bootstrap</p>
 					<h4> TOOLS </h4>
 					<p> <span class="highlighted"> WordPress, </span> Shopify, <span class="highlighted"> Git,
 						</span>CyberDuck, FileZilla,<span class="highlighted"> Postgres, </span>Adobe Workfront,
 						Quickbase, <span class="highlighted">Linux,</span> Sitefinity, <span class="highlighted"> Google
 							Developer Tools,</span> Eloqua, <span class="highlighted"> MAMP, </span>Jira, IntelliJ IDEA,
-						Scene Builder</p>
+						Scene Builder, Klaviyo</p>
 				</div>
 				<div class="skill-item">
 					<h3> RELATED COURSES </h3>
@@ -327,12 +330,62 @@
 			</div>
 			<div class="projects-item section-image"> </div>
 		</div>
-		<h2>In Production</h2>
-		<video width="320" height="240" controls>
-			<source src="ochi.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video>
-	</div>
+		<h2 class="video-header">Site Demos</h2>
+        <!-- Swiper Container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+				<div class="swiper-slide">
+					<div class="center-video">
+						<video width="80%" height="auto" autoplay muted playsinline controls>
+							<source src="plum.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<h3 class="video-title">Plum Shopify Store</h3>
+                    <p class="video-text">This is a custom Shopify theme built with Shopify Liquid, HTML, Tailwind CSS, and JavaScript.</p>
+                </div>
+				<!-- Slide 2 -->
+                <div class="swiper-slide">
+					<div class="center-video">
+						<video width="80%" height="auto" autoplay muted playsinline controls>
+							<source src="ochi.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+						</video>
+					</div>
+					<h3 class="video-title">Cho Cho Shopify Store</h3>
+                    <p class="video-text">This is a custom Shopify theme built with Shopify Liquid, HTML, Tailwind CSS, and JavaScript. This website is currently not live.</p>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+					<div class="center-video">
+						<video width="80%" height="auto" autoplay muted playsinline controls>
+							<source src="wod.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<h3 class="video-title">Wise Old Dog Shopify Store</h3>
+                    <p class="video-text">This is a custom Shopify theme built with Shopify Liquid, HTML, Tailwind CSS, and JavaScript. This website is currently not live.</p>
+                </div>
+                <!-- Slide 4 -->
+                <!-- <div class="swiper-slide">
+					<div class="center-video">
+						<video width="80%" height="auto" autoplay muted playsinline controls>
+							<source src="ochi.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+                    <p class="video-text">This is a custom Shopify theme built with Shopify Liquid, HTML, Tailwind CSS, and JavaScript. This website is currently not live.</p>
+                </div> -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 	<div id="contact" class="section bg7  section-contact">
 		<h2> Let's Chat! </h2>
 		<div class="info section-info contact">
@@ -367,4 +420,24 @@
 	</footer>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
+<script>
+	var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // Optional parameters
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+});
+
+</script>
 </html>
