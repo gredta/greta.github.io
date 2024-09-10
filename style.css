@@ -817,6 +817,7 @@ ul{
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -825,7 +826,7 @@ ul{
     width: 27px;
     height: 44px;
     margin-top: -22px;
-    color: #fff;
+    color: #DB6868 !important;
     cursor: pointer;
     z-index: 10;
 }
@@ -834,6 +835,9 @@ ul{
 }
 .swiper-button-prev {
     left: 10px;
+}
+.swiper-pagination-bullet-active{
+   background:  #DB6868 !important;
 }
 
 .center-video{
