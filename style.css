@@ -12,9 +12,9 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background-color: #f9f9f7;
-    font-weight: 300;
+    font-weight: lighter;
     font-style: normal;
   }
   a{ 
@@ -33,18 +33,19 @@ body {
       font-weight: 200;
   }
   h1{
-      font-family: 'Recoleta';
+      font-family: 'Recoleta', serif;
       /* font-family: 'Montserrat'; */
       font-size: 65px;
       color: #FF7979;
+      font-weight: lighter;
   }
   h2{
-      font-size: 40px;
+      font-size: 50px;
        line-height: .85;
        color: #DB6868;
        opacity: .9;
        font-weight: 300;
-       font-family: 'Recoleta';
+       font-family: 'Recoleta', serif;
   }
   h3{
       opacity: .80;
