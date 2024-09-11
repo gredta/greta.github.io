@@ -445,17 +445,20 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".trends-report", {
-  backgroundColor: "blue", // Target background color
-  duration: 1.5, // Duration of the animation
-  ease: "power2.inOut", // Easing for a smooth transition
-  scrollTrigger: {
-    trigger: ".trends-report", // Trigger the animation when this section is in view
-    start: "top 80%", // Animation starts when the section reaches 80% of the viewport height
-    end: "bottom 20%", // Ends when it scrolls past 20% of the viewport
-    scrub: true, // Smooth scrubbing as you scroll
-  }
-});
-
+// Check if the element with the ID 'hs_cos_wrapper_trends-report' exists
+if (document.querySelector("#skills")) {
+  gsap.to("#skills",
+    {
+      backgroundPosition: "-100%", // Ending position (background color slides in from left to right, filling the element)
+      duration: 1,
+      ease: "power2.inOut",
+      immediateRender: false,
+      scrollTrigger: {
+        trigger: '#skills',                
+        markers: false,
+      }
+    }
+  );
+}
 </script>
 </html>
