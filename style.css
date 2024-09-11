@@ -214,7 +214,7 @@ ul{
       align-self: center;
   }
   .work-div{
-      border-left: 1px #f5b6da solid;
+      border-left: 2px #f5b6da solid;
       padding-left: 10px;
       margin-top: 15px;
       margin-bottom: 5px;
@@ -276,7 +276,7 @@ ul{
  }
 
   .edu-div{
-      border-left: 1px #f5b6da solid;
+      border-left: 2px #f5b6da solid;
       padding-left: 10px;
       margin-top: 15px;
       margin-bottom: 5px;
@@ -291,7 +291,7 @@ ul{
       color: #DB6868;
   }
   .orgs-div{
-      border-left: 1px #f5b6da solid;
+      border-left: 2px #f5b6da solid;
       padding-left: 10px;
       margin-top: 15px;
       margin-bottom: 5px;
@@ -338,7 +338,7 @@ ul{
   }
   
   .skill-item h3{
-      border-bottom: 1px #f5b6da solid;
+      border-bottom: 2px #f5b6da solid;
       padding-bottom: 4px;
   }
   .skill-item h4{
@@ -388,7 +388,7 @@ ul{
   .projects-front{
       flex: 0 1 60%;
       transition: 0.3s;
-      border-right: 1px #DB6868 solid;
+      border-right: 2px #DB6868 solid;
       padding-right: 20px;
   }
   .projects-back{
