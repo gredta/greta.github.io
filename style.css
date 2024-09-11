@@ -392,9 +392,24 @@ ul{
       border-right: 2px #DB6868 solid;
       padding-right: 20px;
   }
+
+  
   .projects-back{
       flex: 0 1 40%;
       transition: 0.3s;
+  }
+
+  @media screen and (max-width: 600px) {
+    .projects-front{
+        flex: 0 1 100%;
+        transition: 0.3s;
+        border-right: none;
+        padding-right: 20px;
+    }
+    .projects-back{
+        flex: 0 1 0%;
+        transition: 0.3s;
+    }
   }
   .link-box{
       height: 100%;
@@ -409,6 +424,12 @@ ul{
   .projects-div:hover .link-box{
       width: 150px;
   }
+  @media screen and (max-width: 600px) {
+    
+    .projects-div:hover .link-box{
+        width: 100px;
+    }
+}
   .link-box li{
       font-size: 18px;
       text-decoration: none;
@@ -425,6 +446,7 @@ ul{
       position: absolute; bottom: 0;
       right: 0;
       margin-top: auto;
+      padding-left: 0px;
   }
   .links{
       color: white !important;
@@ -739,9 +761,6 @@ ul{
       }
       .link-box{
           text-align: center;
-      }
-      .projects-div:hover .link-box{
-          width: 135px;
       }
       #contact{
           height: auto;
