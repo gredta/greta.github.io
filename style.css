@@ -905,6 +905,7 @@ ul{
 .video-title{
     text-align: center;
     margin-top: 1rem;
+    align-items: bas;
 }
 
 .button{
@@ -932,4 +933,43 @@ ul{
   .section.visible {
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to normal position */
+  }
+
+  .video-button{
+    display: block;
+    width: 100%;
+    opacity: .80;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    font-weight: 300;
+    background-color: #DB6868;
+    width: fit-content;
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Recoleta', serif;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+
+    .video-button:hover{
+        background-color: #f9f9f7;
+    }
+
+  .title-button{
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .video-tools{
+    text-align: center;
   }
