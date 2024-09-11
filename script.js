@@ -38,3 +38,19 @@ $(document).ready(function(){
             }
     });
 });
+
+$(document).ready(function() {
+  function checkVisibility() {
+    $('.section').each(function() {
+      var elementTop = $(this).offset().top;
+      var windowBottom = $(window).scrollTop() + $(window).height();
+
+      if (elementTop < windowBottom - 50) {
+        $(this).addClass('visible');
+      }
+    });
+  }
+
+  $(window).on('scroll', checkVisibility);
+  checkVisibility();
+});
