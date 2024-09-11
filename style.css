@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Recoleta;
+    src: url(fonts/Recoleta-Black.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter.ttf);
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -24,7 +33,8 @@ body {
       font-weight: 200;
   }
   h1{
-      font-family: 'Montserrat';
+      font-family: 'Recoleta';
+      /* font-family: 'Montserrat'; */
       font-size: 65px;
       color: #FF7979;
   }
@@ -34,6 +44,7 @@ body {
        color: #DB6868;
        opacity: .9;
        font-weight: 300;
+       font-family: 'Recoleta';
   }
   h3{
       opacity: .80;
