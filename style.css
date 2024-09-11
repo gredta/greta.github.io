@@ -862,15 +862,28 @@ ul{
     cursor: pointer;
     z-index: 10;
 }
-.swiper-button-next {
-    right: 10px;
+
+@media screen and (max-width: 600px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
 }
-.swiper-button-prev {
-    left: 10px;
-}
+
 .swiper-pagination-bullet-active{
    background:  #DB6868 !important;
 }
+
 
 .center-video{
     display: flex;
