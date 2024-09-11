@@ -306,7 +306,8 @@ ul{
       color: #DB6868;
   }
   #skills{
-      background-color: #C46E6E;
+    background: linear-gradient(90deg, transparent 50%, #C46E6E 0%);
+    background-size: 200%;
       color: #f9f9f7;
     -webkit-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.75);
@@ -338,7 +339,7 @@ ul{
   }
   
   .skill-item h3{
-      border-bottom: 2px #f5b6da solid;
+      border-bottom: 1px #fff0f0 solid;
       padding-bottom: 4px;
   }
   .skill-item h4{
