@@ -1011,7 +1011,6 @@ ul{
 
   .mobile-video-button{
     display: none;
-    color: #1f1f1f;
   }
 
   @media screen and (max-width: 768px) {
@@ -1039,6 +1038,7 @@ ul{
         cursor: pointer;
         border: 1px solid #000;
         margin-bottom: 1rem;
+        color: #1f1f1f;
       }
     
         .mobile-video-button:hover{
