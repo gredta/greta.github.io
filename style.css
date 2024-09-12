@@ -961,6 +961,45 @@ ul{
         background-color: #f9f9f7;
     }
 
+    
+
+    .send-button{
+        display: block;
+        width: 100%;
+        opacity: .80;
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: 0px;
+        font-weight: 300;
+        background-color: #f9f9f7;
+        width: fit-content;
+        border-radius: 10px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Recoleta', serif;
+        cursor: pointer;
+        color: #1f1f1f;
+        border: 1px solid #1f1f1f;
+        margin-top: 1rem;
+        opacity: 100%;
+      }
+    
+        .send-button:hover{
+            background-color: #1f1f1f;
+            border: 1px solid #f9f9f7;
+            color: #f9f9f7;
+            opacity: 100%;
+        }
+        .send-button:after{
+            background-color: #f9f9f7;
+            color: #1f1f1f;
+            opacity: 100%;
+        }
+
   .title-button{
     display: flex;
     align-items: flex-end;
@@ -968,6 +1007,52 @@ ul{
     margin: 0 auto;
     text-align: center;
     justify-content: center;
+  }
+
+  .mobile-video-button{
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .video-button {
+        display: none;
+    }
+    .mobile-video-button{
+        display: block;
+        width: 100%;
+        opacity: .80;
+        font-size: 20px;
+        margin-top: auto;
+        margin-bottom: 0px;
+        font-weight: 300;
+        background-color: #DB6868;
+        width: fit-content;
+        border-radius: 10px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Recoleta', serif;
+        cursor: pointer;
+        border: 1px solid #000;
+        margin-bottom: 1rem;
+      }
+    
+        .mobile-video-button:hover{
+            background-color: #f9f9f7;
+        }
+        .video-text{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .swiper-pagination{
+            margin-top: 3rem;
+        }
+        .swiper-slide{
+            margin-bottom: 1rem;
+        }
   }
 
   .video-tools{
