@@ -955,6 +955,7 @@ ul{
     font-family: 'Recoleta', serif;
     cursor: pointer;
     border: 1px solid #000;
+    color: #000;
   }
 
     .video-button:hover{
