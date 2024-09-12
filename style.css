@@ -1011,6 +1011,7 @@ ul{
 
   .mobile-video-button{
     display: none;
+    color: #1f1f1f;
   }
 
   @media screen and (max-width: 768px) {
