@@ -1038,7 +1038,7 @@ ul{
         cursor: pointer;
         border: 1px solid #000;
         margin-bottom: 1rem;
-        color: #1f1f1f;
+        color: #000;
       }
     
         .mobile-video-button:hover{
